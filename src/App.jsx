@@ -36,7 +36,7 @@ class App extends Component {
             password: this.state.password
         }
 
-        axios.post('http://localhost:4000/app/signup', registered)
+        axios.post('https://node-back-end-98.herokuapp.com/app/signup', registered)
         .then(response => console.log(response.data))
 
         this.setState({
